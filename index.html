@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Restaurant Ethiopian Food Delivery</title>
+    <meta name="description"
+        content="Nu Restaurant offers the best authentic Ethiopian cuisine and local dishes. Experience fast food delivery in Bole, Addis Ababa. Order Doro Wot, Kitfo, and more via our mobile app.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="Ethiopian food delivery, Addis Ababa restaurant, Kitfo, Doro Wot, food delivery Bole, local Ethiopian cuisine, fast delivery Addis, best restaurant in Ethiopia">
+    <meta property="og:title" content="Nu Restaurant – Authentic Ethiopian Food Delivery">
+    <meta property="og:description"
+        content="Order the best authentic Ethiopian cuisine in Addis Ababa. Fast delivery of Doro Wot, Kitfo, and local dishes straight to your door.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="en_ET">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a class="nav-logo" href="#home">
+            <img src="images/logo.jpg" alt="Nu Restaurant Logo">
+            <span>Nu Restaurant</span>
+        </a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#app">App</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#download" class="btn-nav">📱 Download App</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#menu" onclick="closeMenu()">Menu</a>
+        <a href="#app" onclick="closeMenu()">App</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="#download" class="btn-nav" onclick="closeMenu()">📱 Download App</a>
+    </div>
+
+    <section id="home">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="hero-badge">Now Available on Mobile</div>
+                <h1 class="hero-title">Authentic Ethiopian Flavor.<br><span>Delivered Fast.</span></h1>
+                <p class="hero-sub">Experience your favorite local dishes from Nu Restaurant with our powerful mobile
+                    delivery app — wherever you are in Addis Ababa.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">📱 Download App</a>
+                    <a href="#menu" class="btn-secondary">🍽 View Menu</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">50K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">4.9★</div>
+                        <div class="stat-label">App Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">30min</div>
+                        <div class="stat-label">Avg. Delivery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in-right">
+                <div class="hero-food-card">
+                    <div class="hero-food-img"
+                        style="background:linear-gradient(135deg, #10b981 0%, #fbbf24 50%, #dc2626 100%);">🥘</div>
+                    <div class="floating-badge top-right">
+                        <div class="float-icon">⚡</div>
+                        <div class="float-text"><strong>Fast Delivery</strong><span>Under 30 min</span></div>
+                    </div>
+                    <div class="floating-badge bottom-left">
+                        <div class="float-icon">⭐</div>
+                        <div class="float-text"><strong>Top Rated</strong><span>4.9 out of 5</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-img fade-in-left" style="background:linear-gradient(135deg,#059669,#10b981);">🛖</div>
+                <div class="about-content fade-in-right">
+                    <div class="section-tag">About Nu Restaurant</div>
+                    <h2 class="section-title">The Story Behind the Authentic Flavor</h2>
+                    <p>Nu Restaurant is a modern culinary destination focused on delivering high-quality traditional
+                        Ethiopian meals with speed, convenience, and unforgettable flavor. Our mission is to combine
+                        fresh, local ingredients, great service, and innovative technology.</p>
+                    <p>We give customers the best dining experience both in-store and through our mobile delivery app —
+                        from our kitchen to your door in record time.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌿</div>
+                            <div class="highlight-text"><strong>Fresh Ingredients</strong><span>Locally sourced spices &
+                                    daily injera</span></div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">👨‍🍳</div>
+                            <div class="highlight-text"><strong>Expert Chefs</strong><span>Masters of traditional
+                                    cuisine</span></div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <div class="highlight-text"><strong>Fast Delivery</strong><span>Real-time tracking across
+                                    Addis</span></div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💳</div>
+                            <div class="highlight-text"><strong>Secure Payments</strong><span>Telebirr, Chapa & cash on
+                                    delivery</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="section-inner">
+            <div class="fade-in" style="text-align:center;">
+                <div class="section-tag">Our Menu</div>
+                <h2 class="section-title">Popular Traditional Dishes</h2>
+                <p class="section-sub" style="margin:0 auto;">Hand-crafted with love, our signature Ethiopian dishes are
+                    prepared fresh for every order.</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#f97316,#fbbf24);">🥘</div>
+                    <div class="menu-body"><span class="menu-tag">Best Seller</span>
+                        <h3 class="menu-title">Doro Wot Special</h3>
+                        <p class="menu-desc">Rich and spicy chicken stew cooked slowly, served with hard-boiled eggs and
+                            fresh injera.</p>
+
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#dc2626,#f97316);">🥩</div>
+                    <div class="menu-body"><span class="menu-tag">Popular</span>
+                        <h3 class="menu-title">Special Kitfo</h3>
+                        <p class="menu-desc">Premium minced lean beef, marinated in authentic mitmita and kibe
+                            (clarified butter).</p>
+
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#059669,#10b981);">🥬</div>
+                    <div class="menu-body"><span class="menu-tag">Healthy</span>
+                        <h3 class="menu-title">Fasting Beyaynetu</h3>
+                        <p class="menu-desc">A colorful assortment of delicious vegan stews and vegetables served on
+                            injera.</p>
+
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#7c3aed,#f97316);">🍛</div>
+                    <div class="menu-body"><span class="menu-tag">Special</span>
+                        <h3 class="menu-title">Tibs Firfir</h3>
+                        <p class="menu-desc">Juicy roasted meat pieces mixed with injera and our signature spicy sauce.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#0ea5e9,#f97316);">🧺</div>
+                    <div class="menu-body"><span class="menu-tag">Combo</span>
+                        <h3 class="menu-title">Nu Special Agelgil</h3>
+                        <p class="menu-desc">The ultimate traditional lunchbox featuring assorted meats and veggies
+                            beautifully presented.</p>
+
+                    </div>
+                </div>
+                <div class="menu-card fade-in">
+                    <div class="menu-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">🍲</div>
+                    <div class="menu-body"><span class="menu-tag">Comfort</span>
+                        <h3 class="menu-title">Shiro Wot</h3>
+                        <p class="menu-desc">Bubbling hot, rich and savory chickpea stew served in a traditional clay
+                            pot.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app">
+        <div class="section-inner">
+            <div class="app-intro-grid">
+                <div class="app-intro-img fade-in-left">
+                    <img src="images/logo.jpg" alt="App Logo" class="app-logo-display">
+                    <div class="app-mockup" style="padding: 0; background: transparent; box-shadow: none;">
+                        <img src="images/image.png" alt="App UI"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                    </div>
+                </div>
+                <div class="app-intro-content fade-in-right">
+                    <div class="section-tag">Mobile Experience</div>
+                    <h2 class="section-title">Order Your Favorites On The Go</h2>
+                    <p>Our mobile app is designed to give you the fastest and smoothest ordering experience. From
+                        real-time tracking to exclusive app-only discounts, we've made sure every tap brings you closer
+                        to a delicious traditional meal.</p>
+                    <p>Download now and get 20% off on your first order via the app!</p>
+                    <div class="app-dl-btns">
+                        <a href="#" class="app-store-btn">
+                            <span class="store-icon">🍎</span>
+                            <div class="store-text"><small>Download on</small><strong>App Store</strong></div>
+                        </a>
+                        <a href="#" class="app-store-btn">
+                            <span class="store-icon">🤖</span>
+                            <div class="store-text"><small>Get it on</small><strong>Google Play</strong></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="section-inner">
+            <div class="fade-in" style="text-align:center;">
+                <div class="section-tag">Why Choose Us</div>
+                <h2 class="section-title">Key Features</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Instant Ordering</h4>
+                    <p>Order in seconds with our optimized one-tap checkout flow.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📍</div>
+                    <h4>Live Tracking</h4>
+                    <p>Track your food in real-time from our kitchen to your doorstep in Addis.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⭐</div>
+                    <h4>Rate & Feedback</h4>
+                    <p>Share your experience and help us improve with our built-in rating system.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌿</div>
+                    <h4>Authentic Taste</h4>
+                    <p>100% natural, locally-sourced ingredients carrying true Ethiopian flavor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how">
+        <div class="section-inner">
+            <div class="fade-in" style="text-align:center;">
+                <div class="section-tag">The Process</div>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            <div class="steps">
+                <div class="step fade-in">
+                    <div class="step-num">01</div>
+                    <h4>Select Dish</h4>
+                    <p>Browse our extensive menu and pick your traditional favorites.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-num">02</div>
+                    <h4>Make Payment</h4>
+                    <p>Pay securely via Telebirr, CBE Birr, or cash on delivery.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-num">03</div>
+                    <h4>We Cook</h4>
+                    <p>Our chefs prepare your meal with the freshest local ingredients.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-num">04</div>
+                    <h4>Get Delivered</h4>
+                    <p>Receive your hot injera and wot anywhere in the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots">
+        <div class="section-inner">
+            <div class="fade-in">
+                <div class="section-tag">App Preview</div>
+                <h2 class="section-title">App Screenshots</h2>
+            </div>
+            <div class="screenshots-scroll">
+                <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
+                    <img src="images/image.png" alt="App Screenshot 1"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                </div>
+                <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
+                    <img src="images/image2.png" alt="App Screenshot 2"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                </div>
+                <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
+                    <img src="images/image3.png" alt="App Screenshot 3"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="download-inner fade-in">
+            <h2 class="section-title">Ready for a Feast?</h2>
+            <p>Join thousands of happy food lovers and start your journey with Nu Restaurant today. Authentic Ethiopian
+                food is just a tap away.</p>
+            <div class="download-btns">
+                <a href="#" class="dl-btn">
+                    <span class="store-icon">🍎</span>
+                    <div class="store-text"><small>Download on</small><strong>App Store</strong></div>
+                </a>
+                <a href="#" class="dl-btn">
+                    <span class="store-icon">🤖</span>
+                    <div class="store-text"><small>Get it on</small><strong>Google Play</strong></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="section-inner">
+            <div class="fade-in" style="text-align:center;">
+                <div class="section-tag">Visual Feast</div>
+                <h2 class="section-title">Our Food Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item g1 fade-in">🥘</div>
+                <div class="gallery-item g2 fade-in">🥩</div>
+                <div class="gallery-item g3 fade-in">🥬</div>
+                <div class="gallery-item g4 fade-in">🍛</div>
+                <div class="gallery-item g5 fade-in">🧺</div>
+                <div class="gallery-item g6 fade-in">🍲</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="section-inner">
+            <div class="fade-in" style="text-align:center;">
+                <div class="section-tag">Testimonials</div>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best local food delivery app I've used in Addis. The food arrives hot
+                        and the tracking is incredibly accurate. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="color:#fff;">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Abebe Kebede</div>
+                            <div class="author-role">Regular Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The Doro Wot Special is out of this world! Reminds me of my mother's
+                        cooking. The Nu App made my life so much easier."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="color:#fff;">S</div>
+                        <div class="author-info">
+                            <div class="author-name">Sara Tadesse</div>
+                            <div class="author-role">Food Blogger</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-inner">
+            <div class="fade-in">
+                <div class="section-tag">Get In Touch</div>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bole, Addis Ababa, Ethiopia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+251 911 000 000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@nurestaurant.com</p>
+                        </div>
+                    </div>
+                    <div class="hours-grid fade-in">
+                        <div class="hour-item"><span>Monday - Friday</span><span>08:00 AM - 10:00 PM</span></div>
+                        <div class="hour-item"><span>Saturday - Sunday</span><span>09:00 AM - 11:00 PM</span></div>
+                    </div>
+                </div>
+                <div class="map-container fade-in">🗺️</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="section-inner">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <a class="footer-logo" href="#">
+                        <img src="images/logo.jpg" alt="Nu Restaurant Logo">
+                        <span>Nu Restaurant</span>
+                    </a>
+                    <p class="footer-desc">Authentic Ethiopian Food. Delivered Fast. Experience the future of food
+                        delivery with our traditional cuisine and advanced mobile app.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><svg width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z" />
+                            </svg></a>
+                        <a href="#" class="social-link" title="Twitter"><svg width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.384 4.482A13.942 13.942 0 0 1 1.671 3.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89-.399.111-.828.167-1.272.167-.314 0-.612-.089-4.92 4.92 0 0 0 4.588 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.557z" />
+                            </svg></a>
+                        <a href="#" class="social-link" title="Instagram"><svg width="24" height="24"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg></a>
+                        <a href="#" class="social-link" title="YouTube"><svg width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#app">Our App</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nu Restaurant. All rights reserved.</p>
+                <p>Designed with ❤️ in Addis Ababa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
