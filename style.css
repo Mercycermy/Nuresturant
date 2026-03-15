@@ -34,7 +34,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Navbar */
@@ -75,7 +75,7 @@ nav.scrolled {
 }
 
 .nav-logo span {
-  font-family: 'Syne', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 800;
   font-size: 1.3rem;
   color: var(--text-primary);
@@ -247,11 +247,12 @@ nav.scrolled {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 900;
-  line-height: 1.1;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .hero-title span {
@@ -325,9 +326,9 @@ nav.scrolled {
 }
 
 .stat-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--orange);
 }
 
@@ -438,9 +439,11 @@ nav.scrolled {
 }
 
 .section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 800;
-  margin-bottom: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
   color: var(--text-primary);
 }
 
@@ -586,9 +589,9 @@ nav.scrolled {
 }
 
 .menu-price {
-  font-family: 'Syne', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--orange);
 }
 
