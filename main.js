@@ -212,25 +212,37 @@ const setupSmoothScroll = () => {
 
 // ═══════ GALLERY LIGHTBOX ═══════
 let currentImageIndex = 0;
-const galleryImages = [
-    { src: 'images/visual.jpg', caption: 'Authentic Ethiopian Cuisine' },
-    { src: 'images/visual1.jpg', caption: 'Traditional Ethiopian Dinner' },
-    { src: 'images/visual2.jpg', caption: 'Freshly Prepared Signature Dish' },
-    { src: 'images/visual3.png', caption: 'Signature Dish Presentation' },
-    { src: 'images/visual4.jpg', caption: 'Chef-Crafted Special Plate' },
-    { src: 'images/visual5.jpg', caption: 'Restaurant Favorite Selection' },
-    { src: 'images/visual6.jpg', caption: 'Nu Restaurant Interior' },
-    { src: 'images/visual7.jpg', caption: 'Premium Dining Experience' },
-    { src: 'images/visual8.jpg', caption: 'Freshly Served Meal' },
-    { src: 'images/visual9.jpg', caption: 'Curated Restaurant Special' },
-    { src: 'images/visual10.jpg', caption: 'Elegant Food Presentation' }
-];
+let galleryImages = [];
+
+const initGalleryImages = () => {
+    const galleryItems = document.querySelectorAll('#gallery .gallery-item');
+    galleryImages = Array.from(galleryItems).map((item) => {
+        const img = item.querySelector('img');
+        return {
+            src: img ? img.getAttribute('src') : '',
+            caption: img ? (img.getAttribute('alt') || 'Gallery Image') : 'Gallery Image'
+        };
+    }).filter((entry) => entry.src);
+
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openLightbox(index));
+    });
+};
 
 function openLightbox(index) {
+    if (!galleryImages.length) return;
+    if (index < 0 || index >= galleryImages.length) return;
     currentImageIndex = index;
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxCaption = document.getElementById('lightbox-caption');
+    lightboxImg.style.opacity = '1';
+    lightboxImg.style.transform = 'scale(1)';
+    lightboxImg.onerror = () => {
+        // Fallback to first image if any referenced image is missing
+        lightboxImg.src = galleryImages[0].src;
+        lightboxCaption.textContent = galleryImages[0].caption;
+    };
     lightboxImg.src = galleryImages[index].src;
     lightboxCaption.textContent = galleryImages[index].caption;
     lightbox.style.display = 'flex';
@@ -258,6 +270,33 @@ function changeLightboxImage(step) {
     }, 200);
 }
 
+// Scroll wheel support for gallery and lightbox
+const initGalleryScroll = () => {
+    const galleryGrid = document.querySelector('#gallery .gallery-grid');
+    if (galleryGrid) {
+        galleryGrid.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                e.preventDefault();
+                galleryGrid.scrollBy({ left: e.deltaY, behavior: 'smooth' });
+            }
+        }, { passive: false });
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        let wheelLocked = false;
+        lightbox.addEventListener('wheel', (e) => {
+            if (lightbox.style.display !== 'flex' || wheelLocked) return;
+            e.preventDefault();
+            wheelLocked = true;
+            changeLightboxImage(e.deltaY > 0 ? 1 : -1);
+            setTimeout(() => {
+                wheelLocked = false;
+            }, 260);
+        }, { passive: false });
+    }
+};
+
 // Close lightbox on background click
 document.getElementById('lightbox').addEventListener('click', (e) => {
     if (e.target.id === 'lightbox') closeLightbox();
@@ -272,6 +311,7 @@ document.addEventListener('keydown', (e) => {
 
 // ═══════ INITIALIZE EVERYTHING ═══════
 document.addEventListener('DOMContentLoaded', () => {
+    initGalleryImages();
     initScrollAnimations();
     initParallax();
     animateCounters();
@@ -279,6 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticCards();
     initCursorGlow();
     setupSmoothScroll();
+    initGalleryScroll();
 });
 
 
