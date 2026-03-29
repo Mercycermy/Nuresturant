@@ -1,5 +1,4 @@
 import re
-import sys
 
 menu_text = """Breakfast
 Scrambled egg – 250 ETB
@@ -125,43 +124,35 @@ for cat in categories:
 
 html_output += '</div>'
 
+# Now read index.html
 with open('c:/Users/zuko/Documents/a/Nuresturant/index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
-# 1. Update Menu
-menu_pattern = re.compile(r'<div class="menu-grid">.*?</div>(?=\s*</div>\s*</section>)', re.DOTALL)
-if menu_pattern.search(html):
-    html = menu_pattern.sub(html_output, html)
-    print("Menu updated.")
-else:
-    print("Warning: Menu pattern not found.")
+# Replace the menu grid
+import re
+new_html = re.sub(r'<div class="menu-grid">.*?</div>\n        </div>\n    </section>', f'{html_output}\n        </div>\n    </section>', html, flags=re.DOTALL)
 
-# 2. Update Events
-events_pattern = re.compile(r'<div class="events-grid">(.*?)</div>(?=\s*</div>\s*</section>)', re.DOTALL)
-if events_pattern.search(html):
-    html = events_pattern.sub(r'<div class="events-carousel carousel-container"><div class="carousel-track events-track">\1</div></div>', html)
-    print("Events updated.")
-else:
-    print("Warning: Events pattern not found.")
+# Replace Events grid with carousel
+events_grid_pattern = r'<div class="events-grid">(.*?)</div>\n        </div>\n    </section>'
+events_carousel = r'<div class="events-carousel carousel-container">\n            <div class="carousel-track events-track">\1</div>\n            </div>\n        </div>\n    </section>'
+new_html = re.sub(events_grid_pattern, events_carousel, new_html, flags=re.DOTALL)
 
-# 3. Update Testimonials
-test_pattern = re.compile(r'<div class="testimonials-grid">(.*?)</div>(?=\s*</div>\s*</section>)', re.DOTALL)
-if test_pattern.search(html):
-    html = test_pattern.sub(r'<div class="testimonials-carousel carousel-container"><div class="carousel-track testimonials-track">\1</div></div>', html)
-    print("Testimonials updated.")
-else:
-    print("Warning: Testimonials pattern not found.")
+# Replace Testimonials grid with carousel
+test_grid_pattern = r'<div class="testimonials-grid">(.*?)</div>\n        </div>\n    </section>'
+test_carousel = r'<div class="testimonials-carousel carousel-container">\n            <div class="carousel-track testimonials-track">\1</div>\n            </div>\n        </div>\n    </section>'
+new_html = re.sub(test_grid_pattern, test_carousel, new_html, flags=re.DOTALL)
 
-# 4. Update Footer
-footer_bottom_pattern = re.compile(r'<div class="footer-bottom">.*?</div>', re.DOTALL)
+# Update Footer
+footer_pattern = r'<div class="footer-bottom">.*?</div>'
 new_footer_bottom = """<div class="footer-bottom">
                 <p>&copy; 2026 Nu Restaurant. All rights reserved.</p>
                 <p>Working hours: 6:00 AM – 11:00 PM</p>
                 <p>Gondar, Ethiopia · 0961612461 / 0962629362 · nurestaurant2@gmail.com</p>
             </div>"""
-html = footer_bottom_pattern.sub(new_footer_bottom, html)
+new_html = re.sub(footer_pattern, new_footer_bottom, new_html, flags=re.DOTALL)
 
-socials_pattern = re.compile(r'<div class="social-links">.*?</div>', re.DOTALL)
+# Update Socials
+socials_pattern = r'<div class="social-links">.*?</div>'
 new_socials = """<div class="social-links">
                         <a href="https://tiktok.com/@numigbet" target="_blank" class="social-link" title="TikTok">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -169,14 +160,22 @@ new_socials = """<div class="social-links">
                             </svg>
                         </a>
                     </div>"""
-html = socials_pattern.sub(new_socials, html)
+new_html = re.sub(socials_pattern, new_socials, new_html, flags=re.DOTALL)
 
-# 5. Update Contact Specifics
-html = re.sub(r'<h4>Phone</h4>\s*<p>\+251 962 629 362</p>', r'<h4>Phone</h4>\n                            <p>0961612461<br>0962629362</p>', html)
-html = re.sub(r'<h4>Email</h4>\s*<p>info@nu-restaurant\.com</p>', r'<h4>Email</h4>\n                            <p>nurestaurant2@gmail.com</p>', html)
-html = re.sub(r'<span>11:00 AM – 11:00 PM</span>', r'<span>6:00 AM – 11:00 PM</span>', html)
+# Update Contact section explicitly
+contact_phones_pattern = r'<h4>Phone</h4>\s*<p>\+251 962 629 362</p>'
+new_contact_phones = r'<h4>Phone</h4><p>0961612461<br>0962629362</p>'
+new_html = re.sub(contact_phones_pattern, new_contact_phones, new_html)
+
+contact_email_pattern = r'<h4>Email</h4>\s*<p>info@nu-restaurant\.com</p>'
+new_contact_email = r'<h4>Email</h4><p>nurestaurant2@gmail.com</p>'
+new_html = re.sub(contact_email_pattern, new_contact_email, new_html)
+
+contact_hours_pattern = r'<div class="hour-item"><span>Monday – Sunday</span><span>11:00 AM – 11:00 PM</span></div>'
+new_contact_hours = r'<div class="hour-item"><span>Monday – Sunday</span><span>6:00 AM – 11:00 PM</span></div>'
+new_html = re.sub(contact_hours_pattern, new_contact_hours, new_html)
 
 with open('c:/Users/zuko/Documents/a/Nuresturant/index.html', 'w', encoding='utf-8') as f:
-    f.write(html)
+    f.write(new_html)
 
-print("All sections updated successfully.")
+print("Updated index.html successfully.")

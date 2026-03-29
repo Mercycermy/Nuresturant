@@ -365,7 +365,7 @@ nav.scrolled {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 460px;
+  max-width: 650px;
   margin-left: auto;
 }
 
@@ -501,6 +501,17 @@ nav.scrolled {
   color: var(--text-muted);
   line-height: 1.9;
   margin-bottom: 20px;
+}
+
+.about-motto {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 30px;
 }
 
 .about-highlights {
@@ -641,6 +652,86 @@ nav.scrolled {
 
 .menu-order:hover {
   background: var(--gold-light);
+}
+
+/* ═══════ EVENTS ═══════ */
+#events {
+  padding: 120px 5%;
+  background: var(--dark-bg);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.event-card {
+  background: var(--dark-card);
+  padding: 40px 32px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-dark);
+  box-shadow: var(--shadow-gold);
+}
+
+.event-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(201, 169, 110, 0.08);
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 24px;
+}
+
+.event-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.event-card ul {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+}
+
+.event-card ul li {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 24px;
+}
+
+.event-card ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold);
+  font-size: 0.8rem;
 }
 
 /* ═══════ APP ═══════ */
@@ -1659,4 +1750,116 @@ footer {
     right: 20px;
     font-size: 28px;
   }
+}
+/* ═══════ NEW EXTENDED MENU STYLES ═══════ */
+.full-menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.menu-category {
+  background: var(--dark-card);
+  padding: 30px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+}
+
+.category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.menu-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-item-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  white-space: nowrap;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 1px dashed var(--text-dim);
+  margin: 0 12px;
+  opacity: 0.4;
+}
+
+.item-price {
+  font-size: 0.95rem;
+  color: var(--gold-light);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ═══════ CAROUSEL STYLES (EVENTS & TESTIMONIALS) ═══════ */
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 0 40px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+}
+
+.events-track .event-card {
+  width: 350px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.testimonials-track .testimonial-card {
+  width: 400px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ═══════ CAROUSEL FORCED OVERRIDES ═══════ */
+.events-carousel .carousel-track,
+.testimonials-carousel .carousel-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 30px !important;
+    width: max-content !important;
+}
+
+.events-carousel .event-card,
+.testimonials-carousel .testimonial-card {
+    width: 350px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+}
+
+/* Also ensure the container has no grid layout applied that breaks it */
+.testimonials-carousel, .events-carousel {
+    display: block !important;
 }

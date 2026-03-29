@@ -6,154 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Nu Restaurant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
     <style>
         .legal-content {
-            padding-top: 120px;
-            padding-bottom: 80px;
-            max-width: 800px;
+            padding: 180px 5% 100px;
+            max-width: 900px;
             margin: 0 auto;
+            color: var(--text-light);
         }
 
-        .legal-header {
-            margin-bottom: 40px;
-            text-align: center;
+        .legal-content h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 1rem;
         }
 
-        .legal-section {
-            margin-bottom: 30px;
+        .legal-content h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold-light);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
         }
 
-        .legal-section h3 {
-            margin-bottom: 15px;
-            color: var(--text-primary);
+        .legal-content p,
+        .legal-content li {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
         }
 
-        .legal-section p {
-            margin-bottom: 10px;
-            line-height: 1.6;
-            color: var(--text-secondary);
+        .legal-content ul {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
 
-<body>
-    <nav id="navbar">
+<body style="background: var(--dark-bg);">
+    <nav id="navbar" class="scrolled">
         <a class="nav-logo" href="index.html">
             <img src="images/logo.jpg" alt="Nu Restaurant">
         </a>
         <div class="nav-links">
             <a href="index.html#home">Home</a>
             <a href="index.html#menu">Menu</a>
-            <a href="index.html#app">App</a>
-            <a href="index.html#gallery">Gallery</a>
             <a href="index.html#contact">Contact</a>
-            <a href="index.html#download" class="btn-nav">Download App</a>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html#home" onclick="closeMenu()">Home</a>
-        <a href="index.html#menu" onclick="closeMenu()">Menu</a>
-        <a href="index.html#app" onclick="closeMenu()">App</a>
-        <a href="index.html#gallery" onclick="closeMenu()">Gallery</a>
-        <a href="index.html#contact" onclick="closeMenu()">Contact</a>
-        <a href="index.html#download" class="btn-nav" onclick="closeMenu()">Download App</a>
-    </div>
+    <section class="legal-content">
+        <h1>Terms of Service</h1>
 
-    <div class="section-inner legal-content">
-        <div class="legal-header">
-            <h1 class="section-title">Terms of Service</h1>
-            <p>Effective Date: March 15, 2026</p>
-        </div>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using the Nu Restaurant website and application, you agree to comply with and be bound by
+            these Terms of Service. If you do not agree, you must not use our services.</p>
 
-        <div class="legal-section">
-            <h3>1. Terms of Use</h3>
-            <p>By accessing and using the Nu Restaurant platform, you agree to comply with and be bound by these Terms
-                of Service. If you do not agree with these terms, please refrain from using our services.</p>
-        </div>
+        <h2>2. Use of Service</h2>
+        <p>Our platform provides users with access to our menu, event booking, ordering, and delivery tracking. All
+            content, pricing, and availability are subject to change without notice.</p>
 
-        <div class="legal-section">
-            <h3>2. Service Availability</h3>
-            <p>Nu Restaurant provides food delivery services across Addis Ababa. We reserve the right to modify service
-                areas, availability, and menu items without prior notice.</p>
-        </div>
+        <h2>3. Orders & Payment</h2>
+        <p>Payments are processed securely through trusted third-party providers. You must ensure all payment details
+            are accurate. We maintain a strict No Refund Policy, except in specific cases outlined in our Privacy
+            Policy.</p>
 
-        <div class="legal-section">
-            <h3>3. Order Placement and Delivery</h3>
-            <p>Accuracy in providing delivery information is the responsibility of the patron. We aim for prompt
-                delivery within the estimated timeframe, but logistics may be affected by external factors.</p>
-        </div>
+        <h2>4. User Conduct</h2>
+        <p>Users are expected to provide accurate information when registering, placing orders, or contacting support.
+            Fraudulent orders or abuse of the app may result in permanent account suspension.</p>
 
-        <div class="legal-section">
-            <h3>4. Payment and Transactions</h3>
-            <p>Payments are processed via secure digital methods or cash upon delivery. All prices listed are inclusive
-                of applicable taxes unless stated otherwise.</p>
-        </div>
+        <h2>5. Intellectual Property</h2>
+        <p>All imagery, logos, text, structure, and code belonging to Nu Restaurant are our intellectual property and
+            may not be reproduced without explicit written consent.</p>
 
-        <div class="legal-section">
-            <h3>5. Limitation of Liability</h3>
-            <p>Nu Restaurant shall not be liable for any indirect or consequential damages arising from the use of our
-                delivery services or application.</p>
-        </div>
-    </div>
+        <h2>6. Governing Law</h2>
+        <p>These Terms and Conditions shall be governed by and construed in accordance with the laws of the Republic of
+            Ethiopia. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive
+            jurisdiction of the courts of Ethiopia.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>For inquiries regarding these terms:<br>
+            Email: nurestaurant2@gmail.com<br>
+            Phone: 0961612461</p>
+    </section>
 
     <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-left">
-                    <a class="footer-logo" href="index.html">
-                        <img src="images/logo.jpg" alt="Nu Restaurant">
-                    </a>
-                    <p class="footer-desc">Great Ethiopian Food. Delivered with Care.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><svg width="20" height="20" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z" />
-                            </svg></a>
-                        <a href="#" class="social-link" title="X (Formerly Twitter)"><svg width="20" height="20"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.494h2.039L6.486 3.24H4.298l13.311 17.407z" />
-                            </svg></a>
-                        <a href="#" class="social-link" title="Instagram"><svg width="20" height="20"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#menu">Menu</a></li>
-                        <li><a href="index.html#app">Our App</a></li>
-                        <li><a href="index.html#gallery">Gallery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="help.html">Help Center</a></li>
-                        <li><a href="index.html#contact">Contact Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
+        <div class="section-inner">
+            <div class="footer-bottom" style="border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
                 <p>&copy; 2026 Nu Restaurant. All rights reserved.</p>
+                <p>Working hours: 6:00 AM – 11:00 PM</p>
+                <p>Gondar, Ethiopia · 0961612461 / 0962629362 · nurestaurant2@gmail.com</p>
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
 </body>
 
 </html>

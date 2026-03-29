@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nu Restaurant Ethiopian Food Delivery</title>
+    <title>Nu Restaurant – Nourishing Body & Mind | Gondar, Ethiopia</title>
     <meta name="description"
-        content="Nu Restaurant offers the best authentic Ethiopian food and local dishes. Experience fast food delivery in Bole, Addis Ababa. Order Doro Wot, Kitfo, and more via our mobile app.">
+        content="Nu Restaurant celebrates Ethiopia's culinary heritage. Experience authentic dishes that nourish both body and mind. Located in Gondar, Ethiopia.">
 
     <!-- SEO Meta Tags -->
     <meta name="keywords"
-        content="Ethiopian food delivery, Addis Ababa restaurant, Kitfo, Doro Wot, food delivery Bole, local Ethiopian food, fast delivery Addis, best restaurant in Ethiopia">
-    <meta property="og:title" content="Nu Restaurant – Authentic Ethiopian Food Delivery">
+        content="Nu Restaurant, Ethiopian food, Gondar restaurant, authentic Ethiopian cuisine, traditional food, food delivery Ethiopia">
+    <meta property="og:title" content="Nu Restaurant – Nourishing Body & Mind">
     <meta property="og:description"
-        content="Order the best authentic Ethiopian food in Addis Ababa. Fast delivery of Doro Wot, Kitfo, and local dishes straight to your door.">
+        content="Celebrating Ethiopia's culinary heritage. Experience authentic dishes that nourish both body and mind.">
     <meta property="og:type" content="restaurant">
     <meta property="og:locale" content="en_ET">
 
@@ -35,8 +35,9 @@
         </a>
         <div class="nav-links">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#menu">Menu</a>
-            <a href="#app">App</a>
+            <a href="#events">Events</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
             <a href="#download" class="btn-nav"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -53,250 +54,683 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
         <a href="#menu" onclick="closeMenu()">Menu</a>
-        <a href="#app" onclick="closeMenu()">App</a>
+        <a href="#events" onclick="closeMenu()">Events</a>
         <a href="#gallery" onclick="closeMenu()">Gallery</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
-        <a href="#download" class="btn-nav" onclick="closeMenu()"><svg width="18" height="18" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                style="margin-right:8px; vertical-align:middle;">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>Download App</a>
+        <a href="#download" class="btn-nav" onclick="closeMenu()">Download App</a>
     </div>
 
+    <!-- ═══════ HERO ═══════ -->
     <section id="home">
         <div class="hero-inner">
             <div class="hero-left">
-                <div class="hero-badge">Official Nu Restaurant Delivery</div>
-                <h1 class="hero-title">Delicious Ethiopian Food.<br><span>Delivered to Your Door.</span></h1>
-                <p class="hero-sub">Enjoy the best local food from the comfort of your home. Nu Restaurant brings
-                    fresh meals directly to you anywhere in Addis Ababa.</p>
-                <div class="hero-buttons">
-                    <a href="#download" class="btn-primary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            style="margin-right:8px; vertical-align:middle;">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                        </svg>Download App</a>
-                    <a href="#menu" class="btn-secondary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                <div class="hero-badge" data-anim="fade-up">Proudly Serving Exceptional Dishes</div>
+                <h1 class="hero-title" data-anim="fade-up" data-delay="100">Welcome to<br><span>Nu Restaurant</span>
+                </h1>
+                <p class="hero-sub" data-anim="fade-up" data-delay="200">The name "Nu" encapsulates a profound and
+                    evocative
+                    message. Our aspiration is to provide nourishment for both the body and the mind, while celebrating
+                    Ethiopia and the essence of Ethiopianism.</p>
+                <div class="hero-buttons" data-anim="fade-up" data-delay="300">
+                    <a href="#menu" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             style="margin-right:8px; vertical-align:middle;">
                             <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                             <path d="M2 17l10 5 10-5"></path>
                             <path d="M2 12l10 5 10-5"></path>
-                        </svg> View Menu</a>
+                        </svg>Explore Menu</a>
+                    <a href="#about" class="btn-secondary">Our Story</a>
                 </div>
-                <div class="hero-stats">
+                <div class="hero-stats" data-anim="fade-up" data-delay="400">
                     <div class="stat-item">
-                        <div class="stat-num">50K+</div>
-                        <div class="stat-label">Happy Customers</div>
+                        <div class="stat-num" data-count="500">0</div>
+                        <div class="stat-label">Happy Guests Daily</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-num">4.9★</div>
-                        <div class="stat-label">App Rating</div>
+                        <div class="stat-num" data-count-text="4.9★">4.9★</div>
+                        <div class="stat-label">Guest Rating</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-num">30min</div>
-                        <div class="stat-label">Avg. Delivery</div>
+                        <div class="stat-num" data-count="12">0</div>
+                        <div class="stat-label">Years of Heritage</div>
                     </div>
                 </div>
             </div>
-            <div class="hero-image fade-in-right">
+            <div class="hero-image" data-anim="fade-left">
                 <div class="hero-food-card">
                     <div class="hero-food-img">
-                        <img src="images/hero.png" alt="Delicious Ethiopian Food"
+                        <img src="images/hero.png" alt="Nu Restaurant Ethiopian Cuisine"
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="floating-badge top-right">
-                        <div class="float-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                            </svg></div>
-                        <div class="float-text"><strong>Fast Delivery</strong><span>Under 30 min</span></div>
-                    </div>
-                    <div class="floating-badge bottom-left">
+                    <div class="floating-badge top-right" data-anim="fade-up" data-delay="500">
                         <div class="float-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polygon
                                     points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                                 </polygon>
                             </svg></div>
-                        <div class="float-text"><strong>Top Rated</strong><span>4.9 out of 5</span></div>
+                        <div class="float-text"><strong>Exceptional Quality</strong><span>Traditional Heritage</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge bottom-left" data-anim="fade-up" data-delay="600">
+                        <div class="float-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 7 0 4.41-3.59 8-8 8V20zM11 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                                </path>
+                            </svg></div>
+                        <div class="float-text"><strong>Fresh & Authentic</strong><span>Locally Sourced</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════ ABOUT ═══════ -->
     <section id="about">
         <div class="section-inner">
             <div class="about-grid">
-                <div class="about-img fade-in-left">
+                <div class="about-img" data-anim="fade-right">
                     <img src="images/about.png" alt="Nu Restaurant Interior"
                         style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div class="about-content fade-in-right">
+                <div class="about-content" data-anim="fade-left">
                     <div class="section-tag">About Nu Restaurant</div>
-                    <h2 class="section-title">Our Story and Food Quality</h2>
-                    <p>Nu Restaurant is a top local places to eat. We focus on serving great Ethiopian food quickly and
-                        with high quality. We use fresh local ingredients and the best service to make sure
-                        your meal is perfect.</p>
-                    <p>We want everyone to have the best time, whether you eat at the restaurant or order through our
-                        delivery app.</p>
+                    <h2 class="section-title">Our Story & Heritage</h2>
+                    <p>The name "Nu" encapsulates a profound and evocative message, carrying a significant meaning and
+                        purpose. Our aspiration is to provide nourishment for both the body and the mind, while
+                        celebrating Ethiopia and the essence of Ethiopianism.</p>
+                    <p>We aim to redefine misconceptions about nutrition by reconnecting it with our authentic
+                        traditional culture. Our major focus is to honor and elevate the profound wisdom embedded in our
+                        culinary heritage.</p>
                     <div class="about-highlights">
-                        <div class="highlight-item">
+                        <div class="highlight-item" data-anim="fade-up" data-delay="100">
                             <div class="highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg></div>
+                            <div class="highlight-text"><strong>Vision</strong><span>To serve food that truly represents
+                                    us</span></div>
+                        </div>
+                        <div class="highlight-item" data-anim="fade-up" data-delay="200">
+                            <div class="highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
                                     <path
-                                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 7 0 4.41-3.59 8-8 8V20zM11 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
                                 </svg></div>
-                            <div class="highlight-text"><strong>Fresh Ingredients</strong><span>Locally sourced spices &
-                                    daily injera</span></div>
+                            <div class="highlight-text"><strong>Mission</strong><span>To equally nourish both mind and
+                                    body</span></div>
                         </div>
-                        <div class="highlight-item">
+                        <div class="highlight-item" data-anim="fade-up" data-delay="300">
                             <div class="highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M6 13.87A4 4 0 1 1 9.87 10H14.13a4 4 0 1 1 3.87 3.87v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4z">
-                                    </path>
-                                    <line x1="9" y1="15" x2="11" y2="15"></line>
-                                    <line x1="13" y1="15" x2="15" y2="15"></line>
-                                </svg></div>
-                            <div class="highlight-text"><strong>Expert Chefs</strong><span>Masters of traditional
-                                    food</span></div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2">
                                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                                 </svg></div>
-                            <div class="highlight-text"><strong>Fast Delivery</strong><span>Real-time tracking across
-                                    Addis</span></div>
+                            <div class="highlight-text"><strong>Restore Heritage</strong><span>Restore Ethiopia's
+                                    indigenous
+                                    culinary practices</span></div>
                         </div>
-                        <div class="highlight-item">
+                        <div class="highlight-item" data-anim="fade-up" data-delay="400">
                             <div class="highlight-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
                                 </svg></div>
-                            <div class="highlight-text"><strong>Secure Payments</strong><span>Telebirr, Chapa & cash on
-                                    delivery</span></div>
+                            <div class="highlight-text"><strong>Promote & Preserve</strong><span>Traditional food
+                                    systems
+                                    rooted in heritage</span></div>
                         </div>
                     </div>
+                    <p class="about-motto" data-anim="fade-up" data-delay="500">"Let's value ourselves!"</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════ WHY US ═══════ -->
+    <section id="features">
+        <div class="section-inner">
+            <div style="text-align:center;" data-anim="fade-up">
+                <div class="section-tag">Why Us</div>
+                <h2 class="section-title">Why Choose Our Restaurant</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-anim="fade-up" data-delay="100">
+                    <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg></div>
+                    <h4>Exceptional Quality</h4>
+                    <p>We focus on delivering the highest quality service, ensuring every experience exceeds
+                        expectations. Our commitment to excellence sets us apart.</p>
+                </div>
+                <div class="feature-card" data-anim="fade-up" data-delay="200">
+                    <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg></div>
+                    <h4>Unmatched Experience</h4>
+                    <p>We ensure an unforgettable experience by delivering exceptional service and creating an
+                        atmosphere
+                        that fosters comfort and satisfaction for all our guests.</p>
+                </div>
+                <div class="feature-card" data-anim="fade-up" data-delay="300">
+                    <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg></div>
+                    <h4>Passion for Excellence</h4>
+                    <p>We are dedicated to providing exceptional service and experiences, ensuring that every detail is
+                        thoughtfully crafted to exceed expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ MENU ═══════ -->
     <section id="menu">
         <div class="section-inner">
-            <div class="fade-in" style="text-align:center;">
+            <div style="text-align:center;" data-anim="fade-up">
                 <div class="section-tag">Our Menu</div>
-                <h2 class="section-title">Popular Dishes</h2>
-                <p class="section-sub" style="margin:0 auto;">Hand-crafted with great care, our signature Ethiopian
-                    dishes are prepared fresh for every order.</p>
+                <h2 class="section-title">Check Our Tasty Menu</h2>
+                <p class="section-sub" style="margin:0 auto;">Hand-crafted with care, our signature Ethiopian
+                    dishes honor culinary traditions passed down through generations.</p>
             </div>
-            <div class="menu-grid">
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu1.png" alt="Doro Wot"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Best Seller</span>
-                        <h3 class="menu-title">Doro Wot Special</h3>
-                        <p class="menu-desc">Rich and spicy chicken stew cooked slowly, served with hard-boiled eggs and
-                            fresh injera.</p>
+            <div class="full-menu-container">
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Breakfast</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Scrambled egg</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Chechebsa</span>
+                <span class="item-dots"></span>
+                <span class="item-price">180 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">NU chechebsa</span>
+                <span class="item-dots"></span>
+                <span class="item-price">280 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Normal full</span>
+                <span class="item-dots"></span>
+                <span class="item-price">145 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Special full</span>
+                <span class="item-dots"></span>
+                <span class="item-price">190 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Kinche</span>
+                <span class="item-dots"></span>
+                <span class="item-price">210 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Bread Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">180 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Kategna Be ergo</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Fasting</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Special Fasting Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">340 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Penne with vegetables</span>
+                <span class="item-dots"></span>
+                <span class="item-price">210 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Rice with vegetable</span>
+                <span class="item-dots"></span>
+                <span class="item-price">230 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Fasting Goulash</span>
+                <span class="item-dots"></span>
+                <span class="item-price">230 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Cooked vegetable</span>
+                <span class="item-dots"></span>
+                <span class="item-price">230 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Mulu Agelgel Fasting</span>
+                <span class="item-dots"></span>
+                <span class="item-price">820 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Gemash Agelgel Fasting</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Shero tegabino/lala</span>
+                <span class="item-dots"></span>
+                <span class="item-price">260 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Telba wot</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Telba Fitfit</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Suf Fitfit</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Shero with vegetable</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Meat</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Derkosh Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">170 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Special Tibs Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">510 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Norma Tibs Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Meet Firfir</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Lamb Tibs</span>
+                <span class="item-dots"></span>
+                <span class="item-price">510 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Beef Tibs</span>
+                <span class="item-dots"></span>
+                <span class="item-price">510 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Kitfo</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Kitfo banatu</span>
+                <span class="item-dots"></span>
+                <span class="item-price">1200 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Key wot</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Kikel</span>
+                <span class="item-dots"></span>
+                <span class="item-price">390 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Shero bozena</span>
+                <span class="item-dots"></span>
+                <span class="item-price">350 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Shekla</span>
+                <span class="item-dots"></span>
+                <span class="item-price">1020 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Doro wot mulu</span>
+                <span class="item-dots"></span>
+                <span class="item-price">4000 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Doro wot Gemash</span>
+                <span class="item-dots"></span>
+                <span class="item-price">2000 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Fish</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Fish goulash</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Fish cuttlet</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Grilled Fish</span>
+                <span class="item-dots"></span>
+                <span class="item-price">450 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Western</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Shewarma</span>
+                <span class="item-dots"></span>
+                <span class="item-price">430 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Tuna pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Margarita pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">580 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Beef pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">580 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Chicken pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">650 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Bergeriza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">690 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Mini pizza</span>
+                <span class="item-dots"></span>
+                <span class="item-price">475 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Lasagna</span>
+                <span class="item-dots"></span>
+                <span class="item-price">1050 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Beef burger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">520 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Cheese burger</span>
+                <span class="item-dots"></span>
+                <span class="item-price">530 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Club sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">540 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Avocado sandwich</span>
+                <span class="item-dots"></span>
+                <span class="item-price">535 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">French fries</span>
+                <span class="item-dots"></span>
+                <span class="item-price">210 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Soups</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Beef Soup</span>
+                <span class="item-dots"></span>
+                <span class="item-price">250 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Fish Soup</span>
+                <span class="item-dots"></span>
+                <span class="item-price">290 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Vegetable Soup</span>
+                <span class="item-dots"></span>
+                <span class="item-price">170 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Tomato Soup</span>
+                <span class="item-dots"></span>
+                <span class="item-price">170 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Salads</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Tuna salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">240 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Mixed salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">190 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Nu special Salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">480 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Desserts</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Fruit punch</span>
+                <span class="item-dots"></span>
+                <span class="item-price">240 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Cream cake</span>
+                <span class="item-dots"></span>
+                <span class="item-price">80 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Fruit salad</span>
+                <span class="item-dots"></span>
+                <span class="item-price">240 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Nu Special Fruit salad Fasting</span>
+                <span class="item-dots"></span>
+                <span class="item-price">480 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Nu Special Fruit salad Non Fasting</span>
+                <span class="item-dots"></span>
+                <span class="item-price">480 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Juices</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Special juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">190 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Shake</span>
+                <span class="item-dots"></span>
+                <span class="item-price">190 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Seasonal juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">160 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Orange juice</span>
+                <span class="item-dots"></span>
+                <span class="item-price">150 ETB</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu-category" data-anim="fade-up">
+        <h3 class="category-title">Extras</h3>
+        <div class="menu-items-list">
+            <div class="menu-item-row">
+                <span class="item-name">Ketchup</span>
+                <span class="item-dots"></span>
+                <span class="item-price">20 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Mitmita</span>
+                <span class="item-dots"></span>
+                <span class="item-price">20 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Awaze</span>
+                <span class="item-dots"></span>
+                <span class="item-price">30 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Extra Injera</span>
+                <span class="item-dots"></span>
+                <span class="item-price">40 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Extra Bread</span>
+                <span class="item-dots"></span>
+                <span class="item-price">20 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Extra Butter</span>
+                <span class="item-dots"></span>
+                <span class="item-price">50 ETB</span>
+            </div>
+            <div class="menu-item-row">
+                <span class="item-name">Mayonnaise</span>
+                <span class="item-dots"></span>
+                <span class="item-price">20 ETB</span>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
 
-                    </div>
+    <!-- ═══════ EVENTS ═══════ -->
+    <section id="events">
+        <div class="section-inner">
+            <div style="text-align:center;" data-anim="fade-up">
+                <div class="section-tag">Events</div>
+                <h2 class="section-title">Organize Your Events in Our Restaurant</h2>
+            </div>
+            <div class="events-carousel carousel-container">
+            <div class="carousel-track events-track">
+                <div class="event-card" data-anim="fade-up" data-delay="100">
+                    <div class="event-icon">🎂</div>
+                    <h3>Birthday Parties</h3>
+                    <p>Celebrate your special day with our customized birthday party packages, designed to create
+                        lasting
+                        memories.</p>
+                    <ul>
+                        <li>Enjoy a variety of delicious dishes, prepared with fresh ingredients</li>
+                        <li>Fun activities and entertainment tailored to your preferences</li>
+                        <li>Professional service to ensure a smooth and memorable experience</li>
+                    </ul>
                 </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu2.png" alt="Special Kitfo"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Popular</span>
-                        <h3 class="menu-title">Special Kitfo</h3>
-                        <p class="menu-desc">Premium minced lean beef, marinated in authentic mitmita and kibe
-                            (clarified butter).</p>
-
-                    </div>
+                <div class="event-card" data-anim="fade-up" data-delay="200">
+                    <div class="event-icon">🥂</div>
+                    <h3>Private Parties</h3>
+                    <p>Celebrate in style with our exclusive private party packages, designed to provide a memorable
+                        experience tailored to your needs.</p>
+                    <ul>
+                        <li>Enjoy personalized menus with a variety of exquisite dishes</li>
+                        <li>Custom decorations and ambiance that reflect your unique style</li>
+                        <li>Expert coordination and service to ensure a seamless event</li>
+                    </ul>
                 </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu3.png" alt="Fasting Beyaynetu"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Healthy</span>
-                        <h3 class="menu-title">Fasting Beyaynetu</h3>
-                        <p class="menu-desc">A colorful assortment of delicious vegan stews and vegetables served on
-                            injera.</p>
-
-                    </div>
+                <div class="event-card" data-anim="fade-up" data-delay="300">
+                    <div class="event-icon">✨</div>
+                    <h3>Custom Parties</h3>
+                    <p>Create your dream event with our custom party packages, tailored to suit your preferences and
+                        needs for a truly unique celebration.</p>
+                    <ul>
+                        <li>A fully customizable menu with a variety of options</li>
+                        <li>Theme decorations to match your vision and style</li>
+                        <li>Flexible event scheduling to accommodate your timing</li>
+                    </ul>
                 </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu4.png" alt="Tibs Firfir"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Special</span>
-                        <h3 class="menu-title">Tibs Firfir</h3>
-                        <p class="menu-desc">Juicy roasted meat pieces mixed with injera and our signature spicy sauce.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu5.png" alt="Nu Special Agelgil"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Combo</span>
-                        <h3 class="menu-title">Nu Special Agelgil</h3>
-                        <p class="menu-desc">The ultimate traditional lunchbox featuring assorted meats and veggies
-                            beautifully presented.</p>
-
-                    </div>
-                </div>
-                <div class="menu-card fade-in">
-                    <div class="menu-img">
-                        <img src="images/menu.png" alt="Shiro Wot"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="menu-body"><span class="menu-tag">Comfort</span>
-                        <h3 class="menu-title">Shiro Wot</h3>
-                        <p class="menu-desc">Bubbling hot, rich and savory chickpea stew served in a traditional clay
-                            pot.</p>
-
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════ APP SECTION ═══════ -->
     <section id="app">
         <div class="section-inner">
             <div class="app-intro-grid">
-                <div class="app-intro-img fade-in-left">
+                <div class="app-intro-img" data-anim="fade-right">
                     <img src="images/logo.jpg" alt="App Logo" class="app-logo-display">
                     <div class="app-mockup" style="padding: 0; background: transparent; box-shadow: none;">
                         <img src="images/image.png" alt="App UI"
-                            style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                            style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
                     </div>
                 </div>
-                <div class="app-intro-content fade-in-right">
-                    <div class="section-tag">Mobile Experience</div>
-                    <h2 class="section-title">A Seamless Mobile Experience</h2>
-                    <p>Our mobile application is designed to provide an efficient and intuitive ordering process.
-                        Benefit from real-time logistics tracking and exclusive service offers, ensuring your
-                        favorite dishes are always accessible.</p>
-                    <p>Download the application today and receive a 20% introductory discount on your first mobile
-                        order.</p>
+                <div class="app-intro-content" data-anim="fade-left">
+                    <div class="section-tag">Mobile Application</div>
+                    <h2 class="section-title">Download Nu Mobile Application</h2>
+                    <p>Experience the ultimate convenience with our app! Order your favorite meals, track your
+                        deliveries, and enjoy exclusive offers – all in one place.</p>
+                    <p>Get our mobile app for more! Download today and unlock a world of authentic Ethiopian cuisine at
+                        your fingertips.</p>
                     <div class="app-dl-btns">
                         <a href="#" class="app-store-btn">
                             <span class="store-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
@@ -322,113 +756,36 @@
         </div>
     </section>
 
-    <section id="features">
-        <div class="section-inner">
-            <div class="fade-in" style="text-align:center;">
-                <div class="section-tag">Service Advantages</div>
-                <h2 class="section-title">Our Features</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-                        </svg></div>
-                    <h4>Efficient Ordering</h4>
-                    <p>Utilize our optimized checkout process for a swift and convenient experience.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg></div>
-                    <h4>Real-time Tracking</h4>
-                    <p>Monitor your delivery status in real-time from our kitchen to your designated location.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon
-                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                            </polygon>
-                        </svg></div>
-                    <h4>Quality Feedback</h4>
-                    <p>Your insights are valuable in our continuous effort to enhance our service quality.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 7 0 4.41-3.59 8-8 8V20zM11 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
-                            </path>
-                        </svg></div>
-                    <h4>Authentic Quality</h4>
-                    <p>We use premium, locally-sourced ingredients to preserve traditional Ethiopian flavors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="how">
-        <div class="section-inner">
-            <div class="fade-in" style="text-align:center;">
-                <div class="section-tag">The Process</div>
-                <h2 class="section-title">How It Works</h2>
-            </div>
-            <div class="steps">
-                <div class="step fade-in">
-                    <div class="step-num">01</div>
-                    <h4>Select Dish</h4>
-                    <p>Browse our extensive menu and pick your traditional favorites.</p>
-                </div>
-                <div class="step fade-in">
-                    <div class="step-num">02</div>
-                    <h4>Make Payment</h4>
-                    <p>Pay securely via Telebirr, CBE Birr, or cash on delivery.</p>
-                </div>
-                <div class="step fade-in">
-                    <div class="step-num">03</div>
-                    <h4>We Cook</h4>
-                    <p>Our chefs prepare your meal with the freshest local ingredients.</p>
-                </div>
-                <div class="step fade-in">
-                    <div class="step-num">04</div>
-                    <h4>Get Delivered</h4>
-                    <p>Receive your hot injera and wot anywhere in the city.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- ═══════ APP SCREENSHOTS ═══════ -->
     <section id="screenshots">
         <div class="section-inner">
-            <div class="fade-in">
+            <div data-anim="fade-up">
                 <div class="section-tag">App Preview</div>
                 <h2 class="section-title">App Screenshots</h2>
             </div>
             <div class="screenshots-scroll">
                 <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
                     <img src="images/image.png" alt="App Screenshot 1"
-                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
                 </div>
                 <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
                     <img src="images/image2.png" alt="App Screenshot 2"
-                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
                 </div>
                 <div class="phone-mockup" style="padding: 0; background: transparent; box-shadow: none;">
                     <img src="images/image3.png" alt="App Screenshot 3"
-                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                        style="width: 100%; height: 100%; object-fit: cover; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════ DOWNLOAD CTA ═══════ -->
     <section id="download">
-        <div class="download-inner fade-in">
-            <h2 class="section-title">Ready for a Great Meal?</h2>
-            <p>Join our growing community of happy customers. Authentic Ethiopian food is available
-                at your fingertips.</p>
+        <div class="download-inner" data-anim="fade-up">
+            <h2 class="section-title">Ready for an Exceptional Dining Experience?</h2>
+            <p>Experience the ultimate convenience with our app. Order your favorite meals, track your deliveries, and
+                enjoy exclusive offers — all in one place.</p>
             <div class="download-btns">
                 <a href="#" class="dl-btn">
                     <span class="store-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
@@ -452,29 +809,30 @@
         </div>
     </section>
 
+    <!-- ═══════ GALLERY ═══════ -->
     <section id="gallery">
         <div class="section-inner">
-            <div class="fade-in" style="text-align:center;">
-                <div class="section-tag">Visual Feast</div>
-                <h2 class="section-title">Our Food Gallery</h2>
+            <div style="text-align:center;" data-anim="fade-up">
+                <div class="section-tag">Gallery</div>
+                <h2 class="section-title">Some Photos from Our Restaurant</h2>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item g1 fade-in" onclick="openLightbox(0)">
+                <div class="gallery-item g1" data-anim="fade-up" data-delay="100" onclick="openLightbox(0)">
                     <img src="images/visual.png" alt="Food Gallery">
                 </div>
-                <div class="gallery-item g2 fade-in" onclick="openLightbox(1)">
+                <div class="gallery-item g2" data-anim="fade-up" data-delay="200" onclick="openLightbox(1)">
                     <img src="images/visual1.png" alt="Food Gallery">
                 </div>
-                <div class="gallery-item g3 fade-in" onclick="openLightbox(2)">
+                <div class="gallery-item g3" data-anim="fade-up" data-delay="300" onclick="openLightbox(2)">
                     <img src="images/menu.png" alt="Food Gallery">
                 </div>
-                <div class="gallery-item g4 fade-in" onclick="openLightbox(3)">
+                <div class="gallery-item g4" data-anim="fade-up" data-delay="100" onclick="openLightbox(3)">
                     <img src="images/menu1.png" alt="Food Gallery">
                 </div>
-                <div class="gallery-item g5 fade-in" onclick="openLightbox(4)">
+                <div class="gallery-item g5" data-anim="fade-up" data-delay="200" onclick="openLightbox(4)">
                     <img src="images/menu2.png" alt="Food Gallery">
                 </div>
-                <div class="gallery-item g6 fade-in" onclick="openLightbox(5)">
+                <div class="gallery-item g6" data-anim="fade-up" data-delay="300" onclick="openLightbox(5)">
                     <img src="images/about.png" alt="Nu Restaurant Interior">
                 </div>
             </div>
@@ -492,50 +850,82 @@
         <button class="lightbox-next" onclick="changeLightboxImage(1)">&#10095;</button>
     </div>
 
+    <!-- ═══════ TESTIMONIALS ═══════ -->
     <section id="testimonials">
         <div class="section-inner">
-            <div class="fade-in" style="text-align:center;">
+            <div style="text-align:center;" data-anim="fade-up">
                 <div class="section-tag">Testimonials</div>
-                <h2 class="section-title">What Our Customers Say</h2>
+                <h2 class="section-title">What They're Saying About Us</h2>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
+            <div class="testimonials-carousel carousel-container">
+            <div class="carousel-track testimonials-track">
+                <div class="testimonial-card" data-anim="fade-up" data-delay="100">
                     <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Best local food delivery app I've used in Addis. The food arrives hot
-                        and the tracking is incredibly accurate. Highly recommended!"</p>
+                    <p class="testimonial-text">"Absolutely fantastic experience! The food was delicious, the ambiance
+                        was perfect, and the staff made us feel at home. I highly recommend this place for any special
+                        occasion!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar" style="color:#fff;">A</div>
+                        <div class="author-avatar" style="color:#fff;">N</div>
                         <div class="author-info">
-                            <div class="author-name">Abebe Kebede</div>
-                            <div class="author-role">Regular Customer</div>
+                            <div class="author-name">Nathnael Chilot</div>
+                            <div class="author-role">Customer</div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card fade-in">
+                <div class="testimonial-card" data-anim="fade-up" data-delay="200">
                     <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"The Doro Wot Special is out of this world! Reminds me of my mother's
-                        cooking. The Nu App made my life so much easier."</p>
+                    <p class="testimonial-text">"The atmosphere was wonderful and the service was top-notch! The dishes
+                        were flavorful and the presentation was spot on. A memorable dining experience!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar" style="color:#fff;">S</div>
+                        <div class="author-avatar" style="color:#fff;">M</div>
                         <div class="author-info">
-                            <div class="author-name">Sara Tadesse</div>
-                            <div class="author-role">Food Blogger</div>
+                            <div class="author-name">Mesfin Getahun</div>
+                            <div class="author-role">Customer</div>
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-card" data-anim="fade-up" data-delay="300">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The ambiance was delightful, and the staff were incredibly attentive!
+                        Each dish was bursting with flavor and beautifully plated. An unforgettable culinary
+                        journey!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="color:#fff;">N</div>
+                        <div class="author-info">
+                            <div class="author-name">Nardos Tsegaye</div>
+                            <div class="author-role">Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-anim="fade-up" data-delay="400">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The service was amazing! From the initial planning stages to the event
+                        itself, everything was handled professionally. The staff went above and beyond to ensure our
+                        event
+                        was memorable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="color:#fff;">M</div>
+                        <div class="author-info">
+                            <div class="author-name">Muluken Demis</div>
+                            <div class="author-role">Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════ CONTACT ═══════ -->
     <section id="contact">
         <div class="section-inner">
-            <div class="fade-in">
+            <div data-anim="fade-up">
                 <div class="section-tag">Get In Touch</div>
                 <h2 class="section-title">Contact Us</h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item fade-in">
+                    <div class="contact-item" data-anim="fade-up" data-delay="100">
                         <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -543,10 +933,10 @@
                             </svg></div>
                         <div>
                             <h4>Location</h4>
-                            <p>Bole, Addis Ababa, Ethiopia</p>
+                            <p>Gondar, Ethiopia</p>
                         </div>
                     </div>
-                    <div class="contact-item fade-in">
+                    <div class="contact-item" data-anim="fade-up" data-delay="200">
                         <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -554,11 +944,10 @@
                                 </path>
                             </svg></div>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+251 911 000 000</p>
+                            <h4>Phone</h4><p>0961612461<br>0962629362</p>
                         </div>
                     </div>
-                    <div class="contact-item fade-in">
+                    <div class="contact-item" data-anim="fade-up" data-delay="300">
                         <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -566,18 +955,16 @@
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg></div>
                         <div>
-                            <h4>Email</h4>
-                            <p>hello@nurestaurant.com</p>
+                            <h4>Email</h4><p>nurestaurant2@gmail.com</p>
                         </div>
                     </div>
-                    <div class="hours-grid fade-in">
-                        <div class="hour-item"><span>Monday - Friday</span><span>08:00 AM - 10:00 PM</span></div>
-                        <div class="hour-item"><span>Saturday - Sunday</span><span>09:00 AM - 11:00 PM</span></div>
+                    <div class="hours-grid" data-anim="fade-up" data-delay="400">
+                        <div class="hour-item"><span>Monday – Sunday</span><span>6:00 AM – 11:00 PM</span></div>
                     </div>
                 </div>
-                <div class="map-container fade-in">
+                <div class="map-container" data-anim="fade-up">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15762.385413346571!2d38.77700204687501!3d9.006935100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8500208cb677%3A0x673415c4d052a202!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1710500000000!5m2!1sen!2set"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62048.46055985!2d37.43!3d12.60!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164227d27b7a30b1%3A0x3c0a48d4a4d09e99!2sGondar%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1710500000000!5m2!1sen!2sus"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -585,6 +972,7 @@
         </div>
     </section>
 
+    <!-- ═══════ FOOTER ═══════ -->
     <footer>
         <div class="section-inner">
             <div class="footer-grid">
@@ -592,59 +980,41 @@
                     <a class="footer-logo" href="#">
                         <img src="images/logo.jpg" alt="Nu Restaurant">
                     </a>
-                    <p class="footer-desc">Great Ethiopian Food. Delivered with Care. Experience
-                        good food service through our traditional cooking and easy mobile app.
-                    </p>
+                    <p class="footer-desc">Nourishing both body and mind. Celebrating Ethiopia's culinary heritage
+                        through authentic traditional cuisine and exceptional service.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><svg width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z" />
-                            </svg></a>
-                        <a href="#" class="social-link" title="X (Formerly Twitter)"><svg width="20" height="20"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.494h2.039L6.486 3.24H4.298l13.311 17.407z" />
-                            </svg></a>
-                        <a href="#" class="social-link" title="Instagram"><svg width="24" height="24"
-                                fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg></a>
-                        <a href="#" class="social-link" title="YouTube"><svg width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg></a>
+                        <a href="https://tiktok.com/@numigbet" target="_blank" class="social-link" title="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.34 2.88 2.88 0 0 1 2.31-4.53 2.84 2.84 0 0 1 1.05.19V9.07a6.29 6.29 0 0 0-1.12-.1 6.33 6.33 0 0 0-5.12 9.87A6.33 6.33 0 0 0 9.17 22a6.34 6.34 0 0 0 6.13-6.68v-6.3a8.27 8.27 0 0 0 4.63 1.54V7.1a5.18 5.18 0 0 0-1.34-.41z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h5>Quick Links</h5>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#menu">Menu</a></li>
-                        <li><a href="#app">Our App</a></li>
+                        <li><a href="#events">Events</a></li>
                         <li><a href="#gallery">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="footer-col" id="legal-links">
-                    <h5>Support</h5>
+                <div class="footer-col">
+                    <h5>Our Services</h5>
                     <ul>
+                        <li><a href="#">Food & Beverage Services</a></li>
+                        <li><a href="#">Delivery & Takeaway Services</a></li>
+                        <li><a href="#">Private Dining & Special Occasions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="help.html">Help Center</a></li>
-                        <li><a href="#contact">Contact Support</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Nu Restaurant. All rights reserved.</p>
-                <p>Designed with <svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626" stroke="none"
-                        style="vertical-align:middle;">
-                        <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                        </path>
-                    </svg> in Addis Ababa</p>
+                <p>Working hours: 6:00 AM – 11:00 PM</p>
+                <p>Gondar, Ethiopia · 0961612461 / 0962629362 · nurestaurant2@gmail.com</p>
             </div>
         </div>
     </footer>
