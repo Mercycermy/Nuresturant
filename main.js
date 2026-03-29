@@ -213,12 +213,17 @@ const setupSmoothScroll = () => {
 // ═══════ GALLERY LIGHTBOX ═══════
 let currentImageIndex = 0;
 const galleryImages = [
-    { src: 'images/visual.png', caption: 'Authentic Ethiopian Cuisine' },
-    { src: 'images/visual1.png', caption: 'Traditional Ethiopian Dinner' },
-    { src: 'images/menu.png', caption: 'Shiro Wot in Clay Pot' },
-    { src: 'images/menu1.png', caption: 'Doro Wot Special' },
-    { src: 'images/menu2.png', caption: 'Special Kitfo' },
-    { src: 'images/about.png', caption: 'Nu Restaurant Interior' }
+    { src: 'images/visual.jpg', caption: 'Authentic Ethiopian Cuisine' },
+    { src: 'images/visual1.jpg', caption: 'Traditional Ethiopian Dinner' },
+    { src: 'images/visual2.jpg', caption: 'Freshly Prepared Signature Dish' },
+    { src: 'images/visual3.png', caption: 'Signature Dish Presentation' },
+    { src: 'images/visual4.jpg', caption: 'Chef-Crafted Special Plate' },
+    { src: 'images/visual5.jpg', caption: 'Restaurant Favorite Selection' },
+    { src: 'images/visual6.jpg', caption: 'Nu Restaurant Interior' },
+    { src: 'images/visual7.jpg', caption: 'Premium Dining Experience' },
+    { src: 'images/visual8.jpg', caption: 'Freshly Served Meal' },
+    { src: 'images/visual9.jpg', caption: 'Curated Restaurant Special' },
+    { src: 'images/visual10.jpg', caption: 'Elegant Food Presentation' }
 ];
 
 function openLightbox(index) {
