@@ -275,3 +275,36 @@ document.addEventListener('DOMContentLoaded', () => {
     initCursorGlow();
     setupSmoothScroll();
 });
+
+
+// Menu Tabs Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.menu-tab-btn');
+    const categories = document.querySelectorAll('.menu-category');
+    
+    // Set initially active category based on first button
+    if(tabBtns.length > 0) {
+        let firstTarget = tabBtns[0].getAttribute('data-target');
+        let firstCat = document.getElementById(firstTarget);
+        if(firstCat) firstCat.classList.add('active');
+    }
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active from all btns
+            tabBtns.forEach(b => b.classList.remove('active'));
+            // Add active to clicked
+            btn.classList.add('active');
+            
+            // Hide all categories
+            categories.forEach(cat => cat.classList.remove('active'));
+            
+            // Show target category
+            const targetId = btn.getAttribute('data-target');
+            const targetCat = document.getElementById(targetId);
+            if(targetCat) {
+                targetCat.classList.add('active');
+            }
+        });
+    });
+});
