@@ -755,7 +755,7 @@ nav.scrolled {
 .values-showcase {
   margin-top: 54px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   perspective: 1000px;
 }
