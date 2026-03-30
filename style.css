@@ -1973,35 +1973,18 @@ footer {
   -webkit-overflow-scrolling: touch;
   padding: 20px 0 40px;
   scrollbar-width: none;
-  /* Firefox */
 }
 
 .carousel-container::-webkit-scrollbar {
   display: none;
-  /* Chrome/Safari */
+}
+
+.testimonials-carousel,
+.events-carousel {
+  display: block !important;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 30px;
-  width: max-content;
-}
-
-.events-track .event-card {
-  width: 350px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-}
-
-.testimonials-track .testimonial-card {
-  width: 400px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-}
-
-/* ═══════ CAROUSEL FORCED OVERRIDES ═══════ */
-.events-carousel .carousel-track,
-.testimonials-carousel .carousel-track {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
@@ -2009,17 +1992,16 @@ footer {
   width: max-content !important;
 }
 
-.events-carousel .event-card,
-.testimonials-carousel .testimonial-card {
+.events-carousel .event-card {
   width: 350px !important;
   flex-shrink: 0 !important;
   scroll-snap-align: start !important;
 }
 
-/* Also ensure the container has no grid layout applied that breaks it */
-.testimonials-carousel,
-.events-carousel {
-  display: block !important;
+.testimonials-carousel .testimonial-card {
+  width: 400px !important;
+  flex-shrink: 0 !important;
+  scroll-snap-align: start !important;
 }
 
 /* ═══════ MENU TABS ═══════ */
@@ -2163,7 +2145,7 @@ footer {
 
 .menu-items-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 25px;
 }
 
@@ -2431,6 +2413,12 @@ footer {
 @media (max-width: 992px) {
   .features-grid {
     grid-template-columns: repeat(2, minmax(240px, 320px));
+  }
+
+  .events-carousel .event-card,
+  .testimonials-carousel .testimonial-card {
+    width: 85vw !important;
+    max-width: 400px !important;
   }
 }
 
