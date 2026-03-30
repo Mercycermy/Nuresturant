@@ -1493,9 +1493,15 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   gap: 80px;
   margin-bottom: 60px;
+}
+
+.footer-links-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
 }
 
 .footer-logo {
@@ -1772,9 +1778,15 @@ footer {
 }
 
 @media (max-width:768px) {
+  footer {
+    padding: 40px 5% 20px;
+  }
   nav {
-    padding: 0 4%;
+    padding: 0 5%;
     height: 72px;
+    width: 100%;
+    left: 0;
+    right: 0;
   }
 
   .nav-links,
@@ -1788,6 +1800,9 @@ footer {
 
   .mobile-menu {
     top: 72px;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
   }
 
   .hero-inner {
@@ -1838,6 +1853,13 @@ footer {
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
   .footer-grid>div:first-child {
