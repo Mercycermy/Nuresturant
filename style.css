@@ -1500,7 +1500,7 @@ footer {
 
 .footer-links-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -1781,6 +1781,7 @@ footer {
   footer {
     padding: 40px 5% 20px;
   }
+
   nav {
     padding: 0 5%;
     height: 72px;
@@ -1858,8 +1859,8 @@ footer {
 
   .footer-links-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .footer-grid>div:first-child {
